@@ -1,0 +1,39 @@
+
+.projects {
+    .image {
+        position: relative;
+        overflow: hidden;
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+            .content {
+                display: block;
+            }
+        }
+
+        img {
+            transition: all 1s ease 0s;
+        }
+    }
+
+    .content {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        color: #ffffff;
+        display: none;
+        opacity: 0.8;
+        background: #555555;
+        padding: 2rem;
+    }
+    h3 {
+        a {
+            color: #ffffff;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.posts {
+    border-top: 1px solid #c7c7c7;
+    margin: 5rem 0;
+}
+
+article {
+    background: #fafafa;
+    margin: 1rem 0px;
+
+    .date {
+        position: absolute;
+        color: #ffffff;
+        padding: 0px 2rem;
+
+        h3 {
+            font-size: 1.2rem;
+            background: #000000;
+            padding: 0.5rem;
+        }
+    }
+
+    .content {
+        padding: 2rem 1rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    p {
+        margin: 1.5rem 0px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        &:before {
+            content: "";
+            background: $link-color;
+            padding: 0px 20px;
+        }
+
+        li {
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 0.1rem;
+            &:after {
+                content: ",";
+            }
+
+            a {
+                color: #838383;
+                &:hover {
+                    color: $link-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .post-heading {
+        margin: 1.5rem 0px;
+    }
+    .read-more-btn {
+        color: #000000;
+        font-size: 1.15rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        &:hover {
+                color: $link-color;
+                text-decoration: none;
+        }
+    }
+}
+
+.sidebar {
+    .bg-gray {
+        background: #fafafa;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+
+        li {
+            &:before {
+                content: "•";
+                color: $link-color;
+                font-weight: bold;
+                font-size: 1.25rem;
+                padding: 1rem;
+                margin: 0px;
+            }
+            a {
+                color: #838383;
+                font-size: 1.25rem;
+                line-height: 2rem;
+                text-decoration: none;
+                &:hover {
+                    color: $link-color;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}

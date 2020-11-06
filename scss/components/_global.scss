@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: $bg-color;
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #F5F5F5; 
+    }
+    &::-webkit-scrollbar {
+        width: 6px;
+        background-color: #F5F5F5; 
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #000000; 
+    }
+}
+
+
+
+h3 {
+    font-family: "Noto Serif", serif;
+}
+
+a {
+    color: #000000;
+    transition: color 0.3s ease 0s;
+    &:hover {
+        color: $link-color;
+        text-decoration: none;
+    }
+}
+
+section {
+    .heading {
+        text-align: center;
+        text-transform: uppercase;
+
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease 0s;
+    outline: none !important;
+
+    &:hover {
+            opacity: 0.8;
+        }
+}

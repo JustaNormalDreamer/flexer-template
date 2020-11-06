@@ -1,0 +1,25 @@
+.featured-articles {
+    img {
+        transition: opacity 0.3s ease 0s;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    .content {
+        h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: "Noto Serif", serif;
+            line-height: 2rem;
+            letter-spacing: 0.02rem;
+        }
+        p {
+            font-size: 1.1rem;
+            font-family: "Open Sans", sans-serif;
+        }
+    }
+}
+
+.bg-magenta {
+    background: $features-color;
+}
