@@ -34,6 +34,9 @@
     h3 {
         a {
             color: #ffffff;
+            &:hover {
+                color: $link-color;
+            }
         }
     }
 }

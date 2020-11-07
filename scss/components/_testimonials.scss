@@ -1,0 +1,38 @@
+.testimonials {    
+    font-size: 1.25rem;    
+    .single-testimonial {
+        background: #fff;
+        border: 1px solid $border-color;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        .image {
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            // right: 0;
+            // margin-top: -50px;
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            width: 100px;
+            height: 100px;           
+        }
+        .content {
+            p {
+                color: $gray-color;
+                &:before {
+                    content: "\"";
+                }
+            }
+            .author {
+                font-weight: bold;
+            }
+            .profession {
+                color: $gray-color;
+            }
+        }
+        h3 {
+            font-size: 1.25rem;   
+        }
+    }
+}
