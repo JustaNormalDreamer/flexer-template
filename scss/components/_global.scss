@@ -44,7 +44,15 @@ section {
     }
 }
 
-
+.dropcap {
+    &::first-letter {
+        float: left;
+        font-weight: bold;
+        font-size: 5rem;
+        line-height: 0.65;
+        margin: 0.1em 0.1em 0.2em 0;
+    }
+}
 
 .back-to-top {
     position: fixed;

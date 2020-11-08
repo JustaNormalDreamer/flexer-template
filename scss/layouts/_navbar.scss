@@ -1,0 +1,40 @@
+.navbar {
+    box-shadow: $box-shadow;
+    transition: .3s;
+    .navbar-brand {
+        font-family: "Noto Serif", serif;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+    .nav-item {
+        .nav-link {
+            font-size: 1.2rem;
+            font-family: "Open Sans", sans-serif;
+            margin: 0 .5rem;
+        }
+        .dropdown-item {
+            &:hover {
+                color: $link-color;
+            }
+        }
+    }
+    .navbar-nav {
+        .active {      
+            border-bottom: 2px solid $link-color;
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+	.navbar .nav-item .dropdown-menu{ 
+        display: none; 
+    }
+	.navbar .nav-item:hover .dropdown-menu{ 
+        display: block; 
+    }
+	.navbar .nav-item .dropdown-menu{ 
+        margin-top:0; 
+    }
+}

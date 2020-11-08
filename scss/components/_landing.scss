@@ -1,0 +1,20 @@
+.landing-header {
+        position: relative;
+        color: #fff;
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        h3 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            a {
+                color: #fff;
+                &:hover {
+                    color: $link-color;
+                }
+            }
+        }
+    }
+}
